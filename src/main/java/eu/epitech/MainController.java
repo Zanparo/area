@@ -1,8 +1,9 @@
 package eu.epitech;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created by lucien on 12/12/2016.
@@ -11,9 +12,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 
-    @RequestMapping("/")
-    public String index() {
-        return "./html/index.html";
+    @GetMapping("/")
+    public String credentialsForm(Model model) {
+        model.addAttribute("credentials", new Credentials());
+        return "credentials";
+    }
+
+    @PostMapping("/")
+    public String credentialsSubmit(@ModelAttribute Credentials credentials) {
+
+        System.out.println(credentials.getEmail());
+        System.out.println(credentials.getPassword());
+
+        return "credentials";
     }
 
 }
