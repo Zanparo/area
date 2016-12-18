@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/connect.css"/>
+    <title>Area. - Facebook Connect</title>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="header"></div>
+
+<style type="text/css">
+    body {
+        background-color: #3a5898;
+    }
+</style>
+
+<form action="/facebookConnect" method="post" style="display:none;">
+
+    <img class="logo" src="../img/facebook.png"/>
+
+    <p>Email</p>
+    <input type="text" name="email"/>
+
+    <p>Password</p>
+    <input type="password" name="password"/>
+
+    <input type="submit" value="Sign in"/>
+
+</form>
+
+</body>
+</html>
