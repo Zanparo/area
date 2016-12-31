@@ -48,6 +48,7 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/de.tobj.twitch/streamobserver -->
     <dependency>
       <groupId>de.tobj.twitch</groupId>
       <artifactId>streamobserver</artifactId>
@@ -69,6 +70,25 @@
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
       <version>${log4j2.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework.social/spring-social-core -->
+    <dependency>
+      <groupId>org.springframework.social</groupId>
+      <artifactId>spring-social-core</artifactId>
+      <version>1.1.4.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.social</groupId>
+      <artifactId>spring-social-web</artifactId>
+      <version>1.1.4.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.social</groupId>
+      <artifactId>spring-social-facebook</artifactId>
+      <version>2.0.3.RELEASE</version>
     </dependency>
 
   </dependencies>
