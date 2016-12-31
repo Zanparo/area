@@ -28,5 +28,19 @@ public class ConnectController {
 
         return "redirect:/";
     }
+    @RequestMapping("/twitchObserver")
+    public String twitchAdd(@RequestParam(value="test", required=false, defaultValue="World") String name, Model model) {
+
+        return "facebookConnect";
+    }
+
+    @PostMapping("/twitchObserver")
+    public String twitchSubmit(@RequestParam("streamer") String email, @RequestParam("password") String password) {
+
+        System.out.println(email);
+        System.out.println(password);
+
+        return "redirect:/";
+    }
 
 }

@@ -14,9 +14,7 @@ public class MainController {
 
     @RequestMapping("/")
     public String dashboard(@RequestParam(value="test", required=false, defaultValue="World") String name, Model model) {
-
         model.addAttribute("test", "Hello World !");
-
         return "dashboard";
     }
 
