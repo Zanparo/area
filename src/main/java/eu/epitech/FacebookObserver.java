@@ -18,19 +18,10 @@ import java.util.ArrayList;
  */
 public class FacebookObserver extends AAction {
 
-    private Facebook facebook;
-    private ConnectionRepository connectionRepository;
-
-    FacebookObserver() {
-        System.out.println("Facebook Observer");
-        Connection<Facebook> connection = connectionRepository.findPrimaryConnection(Facebook.class);
-        Facebook facebook = connection != null ? connection.getApi() : null;
-        this.facebook = facebook;
-        this.connectionRepository = connectionRepository;
-    }
-
     void     exec()
     {
+        System.out.println("EXEC FACEBOOK");
+        /*
         if (connectionRepository.findPrimaryConnection(Facebook.class) != null) {
 
             System.out.println("Get Posts ...");
@@ -41,6 +32,7 @@ public class FacebookObserver extends AAction {
                 System.out.println(feed.get(i).getMessage()); // Get message from latest posts.
             }
         }
+        */
     }
 
 }

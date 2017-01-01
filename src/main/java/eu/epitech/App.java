@@ -38,12 +38,12 @@ public class App
             //}
 
 
-            TwitchObserver obs = new TwitchObserver("akjhceuw45sfdlva4r7afva4266gbe");
-            obs.addChannel("ogaminglol");
-            obs.exec();
+            //TwitchObserver obs = new TwitchObserver("akjhceuw45sfdlva4r7afva4266gbe");
+            //obs.addChannel("ogaminglol");
+            //obs.exec();
 
-            // FacebookObserver fbObs = new FacebookObserver();
-            // fbObs.exec();
+            FacebookObserver fbObs = new FacebookObserver();
+            fbObs.exec();
         };
     }
 
